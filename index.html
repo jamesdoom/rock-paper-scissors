@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>Rock, Paper, Scissors!</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="">
+<style></style>
+
+<body>
+    <h1>Rock, Paper, Scissors</h1>
+    
+
+    <button onclick="inputChoice()">PLAY!</button>
+
+
+<script>
+
+
+//added player input text box that converts to uppercase for comparison purposes   
+function inputChoice() {
+    let playerChoice = prompt("Rock, Paper, or Scissors?");
+    let playerSelection = playerChoice.toUpperCase();
+    alert(playerSelection + "? No Way!");
+    }
+
+
+
+</script>
+
+
+
+</body>
+</html>

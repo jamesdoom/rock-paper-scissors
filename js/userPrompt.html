@@ -1,0 +1,25 @@
+<html>
+<body>
+
+<h1>The Window Object</h1>
+<h2>The prompt() Method</h2>
+
+<p>Click the button to demonstrate the prompt box.</p>
+
+<button onclick="inputChoice()">PLAY!</button>
+
+<p id="demo"></p>
+
+<script>
+function inputChoice() {
+  let playerChoice = prompt("Rock, Paper, or Scissors?");
+  let playerSelection = playerChoice.toUpperCase();
+  alert(playerSelection + "? No Way!");
+  
+}
+</script>
+
+
+
+</body>
+</html>
