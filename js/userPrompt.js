@@ -1,1 +1,0 @@
-let playerChoice = prompt("Rock, Paper, or Scissors?");
