@@ -1,10 +1,10 @@
 document.body.addEventListener("click", event => {
     if (event.target.nodeName=="BUTTON") {
     let randomChoice=[
-        "ROCK",
-        "PAPER",
-        "SCISSORS",
-        ];
+      "ROCK",
+      "PAPER",
+      "SCISSORS",
+      ];
     let computerSelection=randomChoice[Math.floor(Math.random() * randomChoice.length)];
     document.getElementById("c").innerHTML=computerSelection;
     let playerSelection=event.target.textContent;
@@ -16,8 +16,7 @@ document.body.addEventListener("click", event => {
     }
     if (pScore===scoreLimit) {
     document.getElementById("pWin").innerHTML=pWin;
-    } 
-    if (cScore===scoreLimit){
+    } if (cScore===scoreLimit){
     document.getElementById("cWin").innerHTML=cWin;
     }
 });
@@ -35,12 +34,12 @@ function play(playerSelection, computerSelection) {
         pScore++;
         return outcome[0];
     } else if (playerSelection==="PAPER" && computerSelection==="ROCK") {
-        pScore++;
-        return outcome[0];
+          pScore++;
+          return outcome[0];
     } else if (playerSelection==="SCISSORS" && computerSelection==="PAPER") {
-        pScore++;
-        return outcome[0];
+          pScore++;
+          return outcome[0];
     } else
-        cScore++;
-        return outcome[1];
+          cScore++;
+          return outcome[1];
 };
